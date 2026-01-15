@@ -84,3 +84,53 @@ An interactive Power BI dashboard was built to visualize:
 ---
 
 ## Project Structure
+product-funnel-analysis/
+│
+├── data/
+│ └── product_analytics.db
+│
+├── notebook/
+│ └── generate_data.ipynb
+│
+├── sql/
+│ ├── funnel_analysis.sql
+│ ├── device_funnel.sql
+│ └── cohort_retention.sql
+│
+├── dashboards/
+│ ├── Product_Funnel_Analysis.pbix
+│ └── Product_Funnel_Dashboard.pdf
+│
+└── README.md
+
+
+---
+
+## How to Run
+1. Generate data:
+   ```bash
+   python notebook/generate_data.py
+
+
+Run SQL queries from the sql/ folder using SQLite
+
+Open the Power BI file to explore the dashboard
+
+Future Enhancements
+
+Add A/B experiment analysis for onboarding improvements
+
+Extend churn modeling using predictive techniques
+
+Integrate real-world product event datasets
+
+Author
+
+Vishal Kotkar
+Data Analyst | Product Analytics
+LinkedIn: https://linkedin.com/in/vishal-kotkar-9b8652261
+
+GitHub: https://github.com/adventurecodeing
+
+
+
