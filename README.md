@@ -46,3 +46,41 @@ Synthetic data was generated using Python to simulate realistic user behavior an
 
 ### 1. Funnel Analysis
 Analyzed the user journey across the following stages:
+
+- Ensured correct event sequencing using SQL window functions
+- Counted each user once per funnel stage
+- Identified activation as the primary drop-off point
+
+### 2. Device-Level Segmentation
+Compared funnel performance across:
+- Mobile
+- Web
+
+This revealed stronger activation and conversion rates on Mobile, highlighting potential UX friction on Web.
+
+### 3. Cohort-Based Retention Analysis
+- Grouped users by signup date
+- Measured weekly retention using event activity
+- Identified early churn patterns and cohort behavior differences
+
+---
+
+## Key Insights
+- The largest drop-off occurs between **Login and Feature Use**, indicating an activation problem rather than an acquisition issue.
+- **Mobile users** demonstrate higher activation and purchase conversion compared to Web users.
+- Improving onboarding and feature discoverability on Web could significantly increase downstream conversion.
+
+---
+
+## Dashboard
+An interactive Power BI dashboard was built to visualize:
+- Funnel performance
+- Conversion drop-offs
+- Device-level comparison
+
+📄 **Dashboard Preview:**  
+`dashboards/Product_Funnel_Dashboard.pdf`
+
+---
+
+## Project Structure
